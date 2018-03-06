@@ -1,0 +1,126 @@
+<!-- loading链接  https://www.jianshu.com/p/6ac3e3e12d61 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+<style type="">
+	
+	/*.list_tab{
+		height:500px;
+		width:500px;
+		border:1px solid green;
+	}
+	span{
+		display:block;
+		width:100px;
+		height:100px;
+		background:red;
+		animation:myfirst 400ms forwards infinite;
+		-moz-animation:myfirst 400ms  forwards infinite;
+		-webkit-animation:myfirst 400ms  forwards infinite;
+		-o-animation:myfirst 400ms forwards infinite;
+	}
+	@-webkit-keyframes myfirst
+	{
+		from {-webkit-transform:rotate(90deg) scale(.5)}
+		to{-webkit-transform:rotate(180deg) scale(.5)}
+	}*/
+	/*loading第一种*/
+	.loading{
+            width: 80px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top:100px;
+        }
+        .loading span{
+            display: inline-block;
+            width: 8px;
+            height: 100%;
+            border-radius: 4px;
+            background: lightgreen;
+            -webkit-animation: load 1s ease infinite;
+        }
+        @-webkit-keyframes load{
+            0%,100%{
+                height: 40px;
+                background: lightgreen;
+            }
+            50%{
+                height: 70px;
+                margin: -15px 0;
+                background: lightblue;
+            }
+        }
+        .loading span:nth-child(2){
+            -webkit-animation-delay:0.2s;
+        }
+        .loading span:nth-child(3){
+            -webkit-animation-delay:0.4s;
+        }
+        .loading span:nth-child(4){
+            -webkit-animation-delay:0.6s;
+        }
+        .loading span:nth-child(5){
+            -webkit-animation-delay:0.8s;
+        }
+        .loading{
+            width: 150px;
+            height: 4px;
+            border-radius: 2px;
+            margin: 0 auto;
+            margin-top:100px;
+            position: relative;
+            background: lightgreen;
+            -webkit-animation: changeBgColor 1.04s ease-in infinite alternate;
+        }
+        .loading1 span{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: lightgreen;
+            position: absolute;
+            margin-top: -7px;
+            margin-left:-8px;
+            -webkit-animation: changePosition 1.04s ease-in infinite alternate;
+        }
+        @-webkit-keyframes changeBgColor{
+            0%{
+                background: lightgreen;
+            }
+            100%{
+                background: lightblue;
+            }
+        }
+        @-webkit-keyframes changePosition{
+            0%{
+                background: lightgreen;
+            }
+            100%{
+                margin-left: 142px;
+                background: lightblue;
+            }
+        }
+</style>
+</head>
+<body>
+	<!-- <div class=".list_tab">
+		<span></span>
+	</div> -->
+	<!-- loading第一种 -->
+	<!-- <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+	</div> -->
+<!-- loading第二种 -->
+<div class="loading1">
+        <span></span>
+</div>
+</body>
+</html>
